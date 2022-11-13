@@ -4,7 +4,7 @@ import sys
 from datetime import date
 
 def main():
-    api_response = requests.get(f'http://dataservice.accuweather.com/forecasts/v1/daily/2day/274663?apikey=9Kd9RdhI6V9AGV15DZa92WDCGjdUxkfz%20')
+    api_response = requests.get('http://dataservice.accuweather.com/forecasts/v1/daily/1day/274663?apikey=9Kd9RdhI6V9AGV15DZa92WDCGjdUxkfz%20')
     if (api_response.status_code != requests.codes.ok): 
         print("something wrong with response. Reason:", api_response.status_code, api_response.reason)
     else:
